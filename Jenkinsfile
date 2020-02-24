@@ -17,6 +17,11 @@ pipeline {
          steps {
             echo 'do deployment'
          }
-      }      
+      }  
+            stage('Post Deploy validation') {
+         steps {
+            echo 'do validation'
+         }
+      }  
    }
 }
