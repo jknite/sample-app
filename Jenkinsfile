@@ -23,5 +23,10 @@ pipeline {
             echo 'do validation'
          }
       }  
+                  stage('Send notification') {
+         steps {
+            echo 'do notification'
+         }
+      }  
    }
 }
